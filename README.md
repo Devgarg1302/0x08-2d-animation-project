@@ -8,7 +8,7 @@ github URL: https://github.com/Devgarg1302/0x08-2d-animation-project.git
 
 ### Step 2: Animation ###
 
-![](./assets/102117151_102117153_10220970_0x08-Turtle_Hare_Race-Storyboard.png)
+![](./assets/102117151_102117153_102297020-0x08-Turtle_Hare_Race-Storyboard.png)
 ### Step 2: Animation ###
 
 Using the [`requestAnimationFrame`
