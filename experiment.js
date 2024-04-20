@@ -1,7 +1,7 @@
 class Experiment {
   // Group Details
-  static rollNos = '10983437,10983743'
-  static names = 'The Tutors(Akhtar Banga, Phul Tekchand)'
+  static rollNos = '102117151,102117153,102297020'
+  static names = 'Dev Inder Garg,Armandeep Singh,Yaman Bansal'
 
   canvasSel = '#myCanvas'
 
@@ -16,15 +16,17 @@ class Experiment {
 
     // Clock
     // --------------------------------------------------
-    const clock = new Clock(this.canvasSel)
+    const race = new Race(this.canvasSel)
     // const ms = document.timeline.currentTime
     // clock.draw(ms)
     // clock.draw(ms+25000)
-    const clockRafFn = (ts) => {
-      clock.draw(ts)
-      window.requestAnimationFrame(clockRafFn)
-    }
-    const clockRaf = window.requestAnimationFrame(clockRafFn)
+const raceRafFn = (ts) => {
+  race.startRace();
+  window.requestAnimationFrame(raceRafFn);
+};
+
+ window.requestAnimationFrame(raceRafFn);
+ 
     
   }
 
