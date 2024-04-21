@@ -3,7 +3,7 @@ class Race extends Domel {
 	hare = {
 		x: 0,
 		y: 0,
-		speed: 4,
+		speed: 3.5,
 		velocityY: 0,
 		gravity: 0.5,
 		jumpStrength: -3.5,
@@ -12,7 +12,7 @@ class Race extends Domel {
 	hare2 = {
 		x: -250,
 		y: 0,
-		speed: 4,
+		speed: 3.5,
 		velocityY: 0,
 		gravity: 0.5,
 		jumpStrength: -3.5,
@@ -25,13 +25,13 @@ class Race extends Domel {
 	turtle = {
 		x: 0,
 		y: 0,
-		speed: 3
+		speed: 2.5
 	};
 
 	leg1 = {
 		x: 0,
 		y: 0,
-		speed: 3,
+		speed: 2.5,
 		speed2: 0.07,
 		direction: 1,
 		rangeOfMotion: 0.4,
@@ -40,7 +40,7 @@ class Race extends Domel {
 	leg2 = {
 		x: 0,
 		y: 0,
-		speed: 3,
+		speed: 2.5,
 		speed2: 0.07,
 		direction: -1,
 		rangeOfMotion: 0.4,
@@ -51,14 +51,14 @@ class Race extends Domel {
 	turtle2 = {
 		x: -250,
 		y: 0,
-		speed: 3,
+		speed: 2.5,
 		isMoving: true
 	};
 
 	leg12 = {
 		x: -250,
 		y: 0,
-		speed: 3,
+		speed: 2.5,
 		speed2: 0.07,
 		direction: 1,
 		rangeOfMotion: 0.4,
@@ -68,7 +68,7 @@ class Race extends Domel {
 	leg22 = {
 		x: -250,
 		y: 0,
-		speed: 3,
+		speed: 2.5,
 		speed2: 0.07,
 		direction: -1,
 		rangeOfMotion: 0.4,
