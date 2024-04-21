@@ -45437,7 +45437,6 @@ class Race extends Domel {
 		ctx.beginPath();
 		ctx.ellipse(this.hare2.x+235,this.hare2.y+403, 5, 3, 0, 0, 2 * Math.PI);
 		ctx.fill();
-		
 		ctx.restore();
 	}
 
