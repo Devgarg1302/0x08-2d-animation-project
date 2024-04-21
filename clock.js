@@ -45592,7 +45592,7 @@ class Race extends Domel {
 			if (this.hare2.x >= 500 && this.hare2.y <= -60) {
 				this.moveLeg12();
 				this.moveLeg32();
-		this.drawEye();
+				this.drawEye();
 				this.moveTurtle2();
 				this.drawLeg42();
 				this.drawLeg32();
