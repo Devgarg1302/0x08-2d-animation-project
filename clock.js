@@ -45431,6 +45431,15 @@ class Race extends Domel {
 		ctx.restore();
 	}
 
+	drawEye(){
+		ctx.save();
+		ctx.fillStyle = '#fbfadcff';
+		ctx.beginPath();
+		ctx.ellipse(this.hare2.x+235,this.hare2.y+403, 5, 3, 0, 0, 2 * Math.PI);
+		ctx.fill();
+		
+		ctx.restore();
+	}
 
 	clearCanvas() {
 		const canvas = this.el;
@@ -45577,12 +45586,13 @@ class Race extends Domel {
 			this.drawLine2();
 
 			this.moveHare2();
+			
 			this.drawHare2();
 
 			if (this.hare2.x >= 500 && this.hare2.y <= -60) {
 				this.moveLeg12();
 				this.moveLeg32();
-
+		this.drawEye();
 				this.moveTurtle2();
 				this.drawLeg42();
 				this.drawLeg32();
