@@ -7,27 +7,18 @@ class Experiment {
 
   run() {
 
-    // Run the Steppers
-    // this.runSteppers()
-
-    // Hide Steppers
     this.hideSteppers()
     canvasSetup(this.canvasSel)
 
-    // Clock
-    // --------------------------------------------------
     const race = new Race(this.canvasSel)
-    // const ms = document.timeline.currentTime
-    // clock.draw(ms)
-    // clock.draw(ms+25000)
-const raceRafFn = (ts) => {
-  race.startRace();
-  window.requestAnimationFrame(raceRafFn);
-};
+    const raceRafFn = (ts) => {
+      race.startRace();
+      window.requestAnimationFrame(raceRafFn);
+    };
 
- window.requestAnimationFrame(raceRafFn);
- 
-    
+    window.requestAnimationFrame(raceRafFn);
+
+
   }
 
   runSteppers() {
@@ -35,10 +26,10 @@ const raceRafFn = (ts) => {
     // Steppers
     // --------------------------------------------------
     const stepperOneRaf
-	  = window.requestAnimationFrame(stepperOne)
+      = window.requestAnimationFrame(stepperOne)
 
     const stepperTwoRaf
-	  = window.requestAnimationFrame(stepperTwo)
+      = window.requestAnimationFrame(stepperTwo)
 
     const stepperThree = new StepperThree(
       '#valueFromStepperThree', 15
@@ -49,9 +40,9 @@ const raceRafFn = (ts) => {
       window.requestAnimationFrame(stepperThreeFn)
     }
     const stepperThreeRaf
-	  = window.requestAnimationFrame(stepperThreeFn)
+      = window.requestAnimationFrame(stepperThreeFn)
     // --------------------------------------------------
-    
+
   }
 
   hideSteppers() {
